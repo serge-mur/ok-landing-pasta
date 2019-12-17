@@ -13,21 +13,24 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">    
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"> 
+    <link rel="stylesheet" href="lib/slick/slick.css">   
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     
     <header class="header">
+        <div class="top"></div>
+        <img class="cook-photo" src="img/cook-photo.png" alt="Маурицио">        
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <img src="img/cook-photo.png" alt="Маурицио">
-                    <h1>Buon giorno! Меня зовут Маурицио</h1>
-
+                <div class="col-12 my-5">
+                    <h1>Buon giorno!<br> Меня зовут Маурицио.</h1>
+                    <p>Я шеф-повар из Палермо, я работаю в Москве, и хочу<br> рассказать вам о том, где я беру пасту для своего ресторана.</p>
+                    <p>Я влюблен в Passatelli, пасту Ферро с баклажанами и чесночным соусом и бальзамический уксус из Модены, и я не могу молчать, я должен поделиться с вами парой секретов о том, как подобрать лучшую пасту для вашей кухни.</p>
                     <a class="btn" href="#">Хочу выбрать сам</a>
-
                 </div>
             </div>
         </div>       
@@ -35,43 +38,237 @@
 
     <main role="main">
 
-        <section class="section-1">
+        <section class="section-1 back-img">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="">Хотите?</h2>
+                        <h2 class="">Ужин при свечах. Паста карбонара. Хотите так же?</h2>
                         <a href="#" class="btn">Хочу</a>
                     </div>
                 </div>                
             </div>
         </section>
 
-        <section class="section-2">
+        <section class="section-2 back-img">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="">Хотите?</h2>
-                        <a href="#" class="btn">Хочу</a>
+                        <h2 class="">Как я выбираю пасту</h2>
+                        <div>1. Я выбираю пасту из твердых сортов пшеницы: меньше калорий, зато богата белками, клетчаткой, витаминами B1 и E, минералами (фосфором, калием, железом).</div>
+                        <div>2. Смотрю где произведена. Родина пасты - не Россия! Лигурия, Венето, Умбрия, Сардиния, Лацио, Кампания или Пулии - это уже внушает доверие. Посмотрите на упаковку - Made in Italy и никаких копромиссов.</div>
+                        <div>3. На больших промышленных производствах пасту, как готовила моя бабушка не сделаешь. Идеальной считается паста, пропущенная через бронзовую матрицу. Если пасту пропускают через бронзовые фильеры, то паста получает ту самую пористость и шероховатость, необходимую для лучшего впитывания масла и соуса. Также "фишка" ремесленных производств и местных фермеров - сушить пасту при более низких температурах. Это занимает больше времени, но сохраняет прекрасный вкус пшеницы.</div>
                     </div>
                 </div>                
             </div>
         </section>
+
+        <section class="section-3">
+            <h2 class="">Примеры хорошего выбора</h2>            
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 mx-auto">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="#" class="product">
+                                    <div class="label">233.00 &#8381;</div>
+                                    <img src="img/pasta1.png" alt="">
+                                    <div class="name">Паста Casa Rinaldi Каппеллини гнезда 0.5 x 12 шт</div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="product">
+                                    <div class="label">116.00 &#8381;</div>
+                                    <img src="img/pasta2.png" alt="">
+                                    <div class="name">Паста Casa Rinaldi Папарделли гнезда 0.5 x 12 шт</div>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="product">
+                                    <div class="label">285.00 &#8381;</div>
+                                    <img src="img/pasta3.png" alt="">
+                                    <div class="name">Паста Casa Rinaldi Букатини из Лацио ручной работы 0.5 x 12 шт</div>
+                                </a>                                
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Хочу выбрать сам</a>
+        </section>
+
+        <section class="section-4 back-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="">Мой поставщик — Итал Сити Фуд</h2>
+                        <p>Итал Сити Фуд закупается у небольших частных итальянских фермерских хозяйста со своими пастбищами, источниками, оливковыми рощами и многовековыми традициями, передающимися из поколения в поколение.</p>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Бережная доставка в Россию - теперь и вы можете закупиться у сеньора Фиорентино из Лацио. Сертификаты качества, декларации соответствия прилагаются. </p>
+                        <p>Если покупать от 12 штук - <b>дешевле прайс</b>. Но можно купить и поштучно.</p>
+                        <p><b>Бесплатная доставка</b> домой от 6000 р.</p>
+                        <p><b>Оплата по получении</b> - когда вы проверили заказ и убедились, что все корректно</p>
+                        <a href="#" class="btn">Попробовать</a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Что еще попробовать</h2>
+                        <p>Кроме пасты вы можете заказать все остальное, что необходимо для приготовления лучших блюд итальянской кухни.</p>
+                        <p>Первоклассные консервированные маслины и оливки, растительные и оливковые масла. Так же вам может понадобиться бальзамический уксус или итальянские соусы.</p>
+                        <div class="row">
+                            <div class="col-9 mx-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="category">
+                                            <img src="img/olives.png" alt="">
+                                            <div class="name">Консервированные оливки и маслины</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="category">
+                                            <img src="img/pasta.png" alt="">
+                                            <div class="name">Паста</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="category">
+                                            <img src="img/sauce.png" alt="">
+                                            <div class="name">Соусы и бальзамический уксус</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="#" class="category">
+                                            <img src="img/oil.png" alt="">
+                                            <div class="name">Растительные и оливковые масла</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Попробовать</a>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Наши отзывы</h2>                        
+                        <div class="review-slider">
+                            <div>
+                                <p>Закупились офисом пастой Фарфалле Fantasia (бантики) приехали в упаковке с итальянскими данными, все аккуратно упаковано. Паста из твердых сортов пшеницы, очень вкусная. Коллеги заказали пенне ригате - классическая паста, 116 р за 500 г. Такой запас пасты всегда кстати, она не испортится, а вкус отличается от обычных макарон - меньше калорий и намного вкуснее. С песто и томатными соусами пойдет прекрасно - все это есть в ассортименте Итал Сити Фуд.</p>    
+                                <p>Наконец-то пришел мой заказ. Бальзамический крем с инжиром... ммм! Это шедевр... Приготовила вкусный овощной салат можно сказать получился греческий с изюминкой... Рекомендую! Чтобы сделать праздник, не обязательно выбирать итальянский ресторан... Можно устроить его у себя на кухне!</p>    
+                                <p>Наталья</p>
+                            </div>
+                            <div>
+                                <p>Я заказала Помидоры Casa Rinaldi сушеные с каперсами в подсолнечном масле. Осталась очень довольна покупкой. Обычно, я добавляю сушеные помидоры в салат. Туда же кладу руколу, артишоки, оливки и тонко нарезанные кабачки. Получается божественно! Всем советую Помидоры Casa Rinaldi сушеные с каперсами в подсолнечном масле! Артишоки и оливки я также покупаю Casa Rinaldi.</p>
+                                <p>Не давно я покупала Хлебные палочки Casa Rinaldi Гриссини с оливковым маслом. В магазинах они стоят гораздо дороже, около 220 руб. И даже за эту цену, купить их можно далеко не везде. На откоробки.ru я заказала 12 шт, всего за 120 руб за штуку. Это, действительно, очень дешево и вкусно! Особенно, с паштетом или хумусом!</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Попробовать</a>
+                    </div>
+                </div>                
+            </div>
+        </section>        
+
+        <section class="section-8 back-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="message">Купите себе любимому пачку пасты, минимальный заказ от нуля рублей</div>                        
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-9 back-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="message">Закупитесь в ресторан или кафе по оптовому прайсу</div>                        
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section-10 back-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="message">Закупитесь с друзьями или коллегами на 6000 рублей для бесплатной доставки</div>                        
+                    </div>
+                </div>                
+            </div>
+        </section>        
+
+        <section class="section-11">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Есть место, где пасту покупаю я и, возможно, повар в твоем любимом ресторане. Вот, выбирай:</p>
+                        <a href="#" class="btn">В магазин</a>                 
+                    </div>
+                </div>                
+            </div>
+        </section>        
+
+        <section class="section-12 back-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Хотите купить сейчас?</h2>
+                        <p>Оставьте свой e-mail, я вышлю pdf-каталог моих самых любимых рецептов специально для Вас!</p>
+                        <form action="">
+                            <input type="text" placeholder="E-mail">
+                            <a href="#" class="btn">Отправить</a>
+                        </form>
+                     </div>
+                </div>                
+            </div>
+        </section>        
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer contacts">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    
+                <div class="col-6">
+                    <a href="http://otkorobki.ru">otkorobki.ru</a>
+                    <a href="mailto:ilove@otkorobki.ru">ilove@otkorobki.ru</a>
+                </div>
+                <div class="col-6">
+                    <a href="tel:74952151036">+7 495 215 10 36</a>
+                    <span>С 9:00 до 18:00 по будням</span>
                 </div>
             </div>            
         </div>
 
     </footer>
 
-    <!-- <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    
+    <script>
+        $('.review-slider').slick({
+
+        });    
+    </script>
+    <!-- <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script> -->
 </body>
 
