@@ -24,13 +24,17 @@ h1+p {
     line-height: 3.125rem;
     font-weight: normal;    
 }
-
-@media (min-width: 576px) {
-    h1, h2 {
-        /* font-size: 3.75rem; */
-    }    
+section {
+    text-align: center;
+    padding: 10rem 0;
 }
-
+section h2 {
+    margin-bottom: 3rem;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 .btn {
     display: inline-block;
     font-weight: normal;
@@ -38,10 +42,12 @@ h1+p {
     text-align: center;
     vertical-align: middle;  
     background-color: var(--btn-normal);
-    padding: 1rem 2.5rem;
-    font-size: 1rem;
+    padding: 1rem 0;
+    font-size: 1.25rem;
     line-height: 1.5;
     transition: background-color 0.15s ease-in-out;
+    width: 250px;
+    margin-top: 5rem;
 }
 .btn:hover {
     background-color: var(--btn-hover);
@@ -54,16 +60,17 @@ h1+p {
 }
 .header {
     text-align: center;
+    padding: 0 0 10rem 0;
 }
 .header .cook-photo {
     margin-top: -115px;
 }
+.header h1 {
+    margin: 3rem 0;
+}
 .top {
     background-color: var(--back-color);
     height: 300px;
-}
-section {
-    text-align: center;    
 }
 .back-img {
     background-size: cover;
@@ -73,17 +80,24 @@ section {
     background-image: url(../img/pt-2-bg.jpg);
     color: #fff;
 }
-
 .section-2 {
     background-image: url(../img/pt-3-bg.jpg);
     color: #fff;    
 }
-.section-3 {
+.section-2 .list-block div {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.section-2 .list-block div>span:first-child {
+    font-size: 3rem;
+}
+.section-2 .list-block div>span:last-child {
 
 }
 .product {
     display: block;
     position: relative;
+    margin-bottom: 1.5rem;
 }
 .product:hover {
     text-decoration: none;
@@ -117,11 +131,10 @@ section {
 .section-6 p {
     font-size: 1rem;
 }
-.category
-
 .category {
     display: block;
     position: relative;
+    margin: 3rem 0;
 }
 .category:hover {
     text-decoration: none;
@@ -138,6 +151,7 @@ section {
 .category .name {
     font-size: 1rem;
     color: var(--main-color);
+    margin-top: 1rem;
 }
 .category:hover .name {
     color: #000;
@@ -145,8 +159,9 @@ section {
 .section-7 {
     background-color: var(--back-color);
 }
-.review-slider {
-    background-color: #fff;
+.review-slider .review-item {
+    background-color: #fff;    
+    padding: 3rem 5rem;
 }
 .section-8 {
     background-image: url(../img/bg1.jpg);
@@ -163,21 +178,123 @@ section {
     font-family: 'Merriweather', serif;
     font-weight: 300;
     color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    /* background-color: rgba(0, 0, 0, .5); */
     padding: 2rem;
 }
 .section-12 {
     background-image: url(../img/bg.jpg);
     color: #fff;
 }
+.section-12 p {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 5rem;
+}
 .section-12 input {
     display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    width: 50%;
 }
-
 .footer {
     background-color: var(--footer-back);
+    padding: 5rem 0;
 }
 .contacts a,
 .contacts span {
     display: block;
+    font-size: 1.75rem;
+    line-height: 3.125rem;
+    font-weight: 100;
+    color: var(--back-color);
+    margin-bottom: 1.5rem;
+}
+.contacts a:hover {
+    text-decoration: none;
+}
+/* Slider */
+.slick-slide {
+    outline: none
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 68px;
+    height: 68px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.slick-prev:focus,
+.slick-next:focus {
+    outline: none;
+}
+.slick-prev:hover {
+    background-image: url(../img/left-button\ hover.png);
+}
+.slick-next:hover {
+    background-image: url(../img/right-button\ hover.png);
+}
+.slick-prev {
+    background-image: url(../img/left-button.png);
+    left: -100px;
+}
+.slick-next {
+    background-image: url(../img/right-button.png);
+    right: -100px;
+}
+@media (max-width: 575px) {
+    body {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    h1, section h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    h1+p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    section {
+        padding: 3rem 0;
+    }
+    section h2 {
+        margin-bottom: 1.5rem;
+    }
+    .top {
+        height: 150px;
+    }
+    .header {
+        padding: 0 0 3rem 0;
+    }
+    .slick-prev,
+    .slick-next {
+        display: none!important;
+    }
+    .btn {
+        margin-top: 3rem;
+    }
+    .category {
+        margin: 1.5rem 0;
+    }
+    .review-slider .review-item {  
+        padding: 1.5rem 1rem;
+    }
+    .section-12 input {
+        width: 100%;
+    }
+    .footer {
+        padding: 3rem 0;
+    }
+    .contacts a,
+    .contacts span {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
 }
